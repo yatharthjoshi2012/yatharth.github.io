@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Join Indian Travel Agency</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body class="body">
+	<div class="join-container">
+		<h2>Join Indian Travel Agency</h2>
+		<form class="join-form" id="joinForm" autocomplete="on">
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="name" required placeholder="Your Name">
+
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="email" required placeholder="you@example.com">
+
+			<label for="phone">Phone Number</label>
+			<input type="tel" id="phone" name="phone" required placeholder="e.g. +1234567890">
+
+			<label for="interest">Travel Interest</label>
+			<select id="interest" name="interest" required>
+				<option value="">Select an option</option>
+				<option value="adventure">Adventure</option>
+				<option value="leisure">Leisure</option>
+				<option value="cultural">Cultural</option>
+				<option value="family">Family</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="message">Tell us about your dream trip</label>
+			<textarea id="message" name="message" rows="3" placeholder="Share your travel goals..."></textarea>
+
+			<button type="submit">JOIN NOW</button>
+		</form>
+		<div class="success-message" id="successMessage" style="display:none;">Thank you for joining! We'll contact you soon.</div>
+	</div>
+	<script>
+		document.getElementById('joinForm').addEventListener('submit', function(e) {
+			e.preventDefault();
+			document.getElementById('joinForm').style.display = 'none';
+			document.getElementById('successMessage').style.display = 'block';
+		});
+	</script>
+</body>
+</html>
