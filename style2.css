@@ -1,0 +1,63 @@
+.body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+    .join-container {
+	background: #fff;
+	padding: 2.5rem 2rem;
+	border-radius: 18px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+	max-width: 400px;
+	width: 100%;
+}
+	.join-container h2 {
+	text-align: center;
+	color: #1e3c72;
+	margin-bottom: 1.5rem;
+}
+	.join-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #333;
+	font-weight: 500;
+}
+	.join-form input, .join-form select, .join-form textarea {
+	width: 100%;
+	padding: 0.7rem;
+	margin-bottom: 1.2rem;
+	border: 1px solid #b2bec3;
+	border-radius: 6px;
+	font-size: 1rem;
+	background: #f7faff;
+	transition: border 0.2s;
+}
+	.join-form input:focus, .join-form select:focus, .join-form textarea:focus {
+	border-color: #66a6ff;
+	outline: none;
+}
+	.join-form button {
+	width: 100%;
+	padding: 0.9rem;
+	background: linear-gradient(90deg, #1e3c72 0%, #4368a9 100%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+	.join-form button:hover {
+	background: linear-gradient(90deg, #4368a9 0%, #1e3c72 100%);
+}
+    .success-message {
+	color: #1aa252;
+	text-align: center;
+	margin-top: 1rem;
+}
